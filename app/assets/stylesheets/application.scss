@@ -19,6 +19,17 @@
  @import "bootstrap";
  @import "font-awesome";
 
+
+ html {
+   position: relative;
+   min-height: 100%;
+ }
+
+ body {
+   /* Margin bottom by footer height */
+   margin-bottom: 100px;
+ }
+
 .jumbotron {
   background-image:url('https://ww4.sinaimg.cn/large/006tNc79ly1fesenhshctj31kw11yb2d.jpg');
   background-repeat: no-repeat;
@@ -86,9 +97,9 @@
 }
 
 .navbar-default {
-   background-color: #BDBDBD;  //背景颜色
+   background-color: #233140;  //背景颜色
 
-   border-color: #BDBDBD; //边框色
+   border-color: #233140; //边框色
 
    margin-bottom: 0; //底部 margin 不撑开距离
 }
@@ -100,7 +111,7 @@
 }
 
 .navbar-default .navbar-brand {
- color: #0D47A1; //字体颜色
+ color: #FAFAFA; //字体颜色
 
  padding: 10px 15px; //上下10px，左右15px
  line-height: 30px; //文字行高
@@ -108,37 +119,37 @@
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
- color: #FF6F00; //鼠标放置在链接上的文字颜色
+ color: #FFFF00; //鼠标放置在链接上的文字颜色
 
  background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
 }
 
 .navbar-default .navbar-nav > li > a{
- color: #EF6C00;
+ color: #FAFAFA;
 
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
- color: #FF6F00;
+ color: #FFFF00;
 
  background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
- color: #FF6F00;
+ color: #FFFF00;
 
- background-color: #FFE0B2;
+ background-color: transparent;
 
 }
 
  .navbar-default .navbar-nav > .open > a,
  .navbar-default .navbar-nav > .open > a:focus,
  .navbar-default .navbar-nav > .open > a:hover {
-   background-color: #FFE0B2;
+   background-color: transparent;
 
-   color: #212121;
+   color: #FFFF00;
 
  }
 
@@ -149,18 +160,20 @@
 }
 
 .btn-danger {
-   color: #fff;//字体颜色
+   color: #FAFAFA;//字体颜色
 
-   background-color: #EF6C00;//背景颜色
+   background-color: transparent;//背景颜色
 
-   border-color: #EF6C00;//边框颜色
+   border-color: transparent;//边框颜色
 
 }
 
 .btn-danger:hover {
-   background-color: #E65100;//鼠标放置在btn上的背景颜色
+   color: #FFFF00;//字体颜色
 
-   border-color: #E65100;//鼠标放置在btn上的边框颜色
+   background-color: transparent;//鼠标放置在btn上的背景颜色
+
+   border-color: transparent;//鼠标放置在btn上的边框颜色
 
 }
 
@@ -268,3 +281,28 @@
 .login-help{
   font-size: 12px;
 }
+
+
+ html {
+   position: relative;
+   min-height: 100%;
+ }
+
+ body {
+   /* Margin bottom by footer height */
+   margin-bottom: 100px;
+ }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  background-color: #233140;
+
+  p {
+     color: white;
+    margin-top: 30px;
+  }
+ }
