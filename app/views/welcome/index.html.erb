@@ -1,41 +1,77 @@
-  <div class="jumbotron">
-    <h1 class="title">知识猎人.悬赏平台</h1>
-    <p class="slogan">猎人网，这里的每一位猎人在职场中已经千锤百炼，都是职场精英，总有一位猎人是你需要的。
-    <br>
-    在这里你总能找到你需要的猎人。
-    <br>
-    每一位猎人的是独一无二的。
-    </p>
-
+<div class="col-md-12">
+  <div class="row box">
+    <div class="box-inner col-md-6 col-md-offset-3"></div>
+      <h1 class="title">知识猎人</h1>
+      <p class="slogan">在信息爆炸而知识稀缺的时代
+      <br/>
+      有一群以知识为宝藏的知识猎人
+      <br/>
+      用掌握知识宝藏探索世界
+      </p>
+      <p class="lead1">
+        <%= link_to '悬赏', jobs_path, class: 'btn btn-danger' %>
+      </p>
+    </div>
   </div>
+</div>
 
-  <section id="company">
-    <div class = "container-fluid">
-      <div class="row">
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-31.png" alt="search" class = "img-thumbnail">
-            <div class="caption">
-              <h3>北京朝阳建外SOHO</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-48.png" alt="bid" class = "img-thumbnail">
-            <div class="caption">
-              <h3>info@lieren.com</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-44-00.png" alt="heart" class = "img-thumbnail">
-            <div class="caption">
-              <h3>010-23415678</h3>
-            </div>
-          </div>
-        </div>
+<div class="content-section-a">
+  <div class="container">
+   <div class="row">
+     <div class="col-lg-5 col-sm-6">
+       <div class="clearfix"></div>
+         <h3 class="section-heading">知识猎人.爱因斯坦</h3>
+        <p class="lead">
+          在别人眼中不知何用的信息，在真正的知识猎人手中能提炼出宝贵的知识，并将其利用起来并发挥出巨大的效用。他们引领时代发展的方向，因为他们能做到。
+        </p>
+        <p class="lead">
+          <a target="_blank" href="http://http://baike.baidu.com/item/%E9%98%BF%E5%B0%94%E4%BC%AF%E7%89%B9%C2%B7%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6/127535?fromtitle=%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6&fromid=122624">阿尔伯特·爱因斯坦</a>
+          的就是一个传奇知识猎人，他的贡献有广义相对论、狭义相对论、质能公式：E = mc²等等。人类文明的物理学基石中他的功劳太大了，如果没有他的贡献，难以想象人类文明倒退多少年。
+        </p>
+      </div>
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <%= image_tag 'Knowledge03.jpg', class: 'img-responsive' %>
       </div>
     </div>
-  </section>
+  </div>
+</div>
+
+
+<div class="content-section-b">
+ <div class="container">
+   <div class="row">
+     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+       <div class="clearfix"></div>
+         <h3 class="section-heading">知识猎人.悬赏平台</h3>
+         <p class="lead">
+           让任何水平与任何领域知识猎人更好的实现知识变现的一个平台
+         </p>
+       </div>
+       <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+         <%= image_tag 'Knowledge02.jpg', class: 'img-responsive' %>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<div class="content-section-a">
+ <div class="container">
+   <div class="row">
+     <div >
+       <div class="clearfix"></div>
+         <h3 class="section-heading">知识猎人.悬赏发布规则 1.0 版本</h3>
+         <p class="lead">
+           基本规则 1：悬赏发布者——在所有范围内的知识领域遇到无法解决的问题可以在 “知识猎人.悬赏平台” 发布相应的有明确截止日期与可以明确判断出问题是否被解决的悬赏（必须在尝试 google 等互联网搜索引擎、发动身边所有的人脉等资源后无法解决的悬赏问题）。
+         </p>
+         <p class="lead">
+           基本规则 2：“知识猎人.悬赏平台” 对每个发布任务收取 5% 佣金作为维持运营的费用。“悬赏发布者.任务的赏金”将被暂时保存在 “知识猎人.悬赏平台” 官方账户中。目前正在组建中，暂时由赵龙暂为保管。
+         </p>
+         <p class="lead">
+           注意：该网站在本次全栈营的 job-listing 魔改大赛结束后继续运营。准备 ok 了，会正式运营。
+         </p>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
