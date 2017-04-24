@@ -19,6 +19,7 @@
  @import "bootstrap";
  @import "font-awesome";
 
+
  html {
    position: relative;
    min-height: 100%;
@@ -141,7 +142,6 @@
 
 .content-section-a {
    padding: 50px 0;
-   background-color: #f8f8f8;
    background-color: transparent;
    margin-top: 80px;
    margin-bottom: 80px;
@@ -152,7 +152,7 @@
    padding: 50px 0;
    border-top: 1px solid #e7e7e7;
    border-bottom: 1px solid #e7e7e7;
-   background-color: #C8E6C9;
+   background-color: transparent;
    padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
    margin: 0 -30px 0px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负30，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
    border-radius: 0;//圆角为0
@@ -169,12 +169,21 @@
    margin-bottom: 30px;
 }
 
-.lead  {
+.lead {
    font-size: 18px;
    font-weight: 400;
    color: #212121;
    text-align: left;//文字左对齐
    text-indent:25px
+}
+
+//————
+
+.lead2 {
+   font-size: 18px;
+   font-weight: 400;
+   color: #212121;
+   text-align: left;//文字左对齐
 }
 
 //————管理员后台美化
