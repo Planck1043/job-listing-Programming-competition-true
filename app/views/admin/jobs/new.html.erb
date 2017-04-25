@@ -1,12 +1,12 @@
-<h1> Add a job </h1>
+<h1> 新增知识悬赏任务 </h1>
 
 <%= simple_form_for [:admin,@job] do |f| %>
 
-<%= f.input :title %>
-<%= f.input :description %>
-<%= f.input :wage_lower_bound, :label => "薪资下限" %>
-<%= f.input :wage_upper_bound, :label => "薪资上限" %>
-<%= f.input :contact_email %>
+<%= f.input :title, label:"任务标题" %>
+<%= f.input :description, label:"任务内容" %>
+<%= f.input :wage_lower_bound, :label => "赏金下限" %>
+<%= f.input :wage_upper_bound, :label => "赏金上限" %>
+<%= f.input :contact_email, label:"联系邮箱" %>
 
 <%= f.submit "Submit" %>
 <%= f.input :is_hidden %>
