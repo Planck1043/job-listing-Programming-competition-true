@@ -19,6 +19,18 @@
  @import "bootstrap";
  @import "font-awesome";
 
+
+ .html {
+   position: relative;
+   min-height: 100%;
+ }
+
+ .body {
+   /* Margin bottom by footer height */
+   margin-bottom: 100px;
+ }
+
+
 //————提醒信息————
 .alert {
   border-radius: 0; //圆角为0
