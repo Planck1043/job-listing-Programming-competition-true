@@ -19,225 +19,213 @@
  @import "bootstrap";
  @import "font-awesome";
 
-
- html {
-   position: relative;
-   min-height: 100%;
- }
-
- body {
-   /* Margin bottom by footer height */
-   margin-bottom: 100px;
- }
-
-
- //---------Navbar---------
-
-.navbar-default {
-    background-color: #212121;//背景颜色
-    border-color: #212121;//边框色
-    margin: 0 0px 0px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负30，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
-    margin-bottom: 0;//底部 margin 不撑开距离
-    border-radius: 0;
-}
-
-.navbar-default .navbar-brand {
-    color: #FAFAFA;//字体颜色
-    padding: 10px 15px;//上下10px，左右15px
-    line-height: 30px;//文字行高
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #FFEA00;//鼠标放置在链接上的文字颜色
-    background-color: transparent;
-}
-
+//————提醒信息————
 .alert {
-  margin: 0 -15px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负30，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  border-radius: 0; //圆角为0
+  margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+
 }
 
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0em;
-  padding-right: 0em;
+//————Navbar————
+ .navbar-default {
+     background-color: #212121;  //背景颜色
+
+     border-color: #212121; //边框色
+
+     margin-bottom: 0; //底部 margin 不撑开距离
+ }
+
+ @media (min-width: 768px) {
+   .navbar {
+     border-radius: 0; //圆角为0
+   }
+ }
+
+ .navbar-default .navbar-brand {
+   color: #EF6C00; //字体颜色
+
+   padding: 10px 15px; //上下10px，左右15px
+   line-height: 30px; //文字行高
+ }
+
+ .navbar-default .navbar-brand:hover,
+ .navbar-default .navbar-brand:focus {
+   color: #FF6F00; //鼠标放置在链接上的文字颜色
+
+   background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
+ }
+
+ .navbar-default .navbar-nav > li > a{
+   color: #EF6C00;
+
+ }
+
+ .navbar-default .navbar-nav > li > a:hover,
+ .navbar-default .navbar-nav > li > a:focus {
+   color: #FF6F00;
+
+   background-color: transparent;
+ }
+ .navbar-default .navbar-nav > .active > a,
+ .navbar-default .navbar-nav > .active > a:hover,
+ .navbar-default .navbar-nav > .active > a:focus {
+   color: #FF6F00;
+
+   background-color: #FFE0B2;
+
+ }
+
+ .navbar-default .navbar-nav > .open > a,
+ .navbar-default .navbar-nav > .open > a:focus,
+ .navbar-default .navbar-nav > .open > a:hover {
+   background-color: #FFE0B2;
+
+   color: #212121;
+
+ }
+
+  //---------Footer---------
+
+  footer {
+      color: white;
+  }
+
+  footer .footer-below {
+      padding: 25px 0;
+      background-color: #233140;
+  }
+ //————首页 css————
+
+ .body {
+     font: 20px Montserrat, sans-serif;
+     margin: 0 -3em;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+     line-height: 1.8;
+     color: #f5f6f7;
+ }
+
+ .row {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
-//————导航栏链接
-
-  .navbar-default .navbar-nav > li > a {
-      color: #FAFAFA;
-  }
-
-  .navbar-default .navbar-nav > li > a:hover,
-  .navbar-default .navbar-nav > li > a:focus {
-      color: #FFEA00;//鼠标放置在链接上的文字颜色
-      background-color: transparent;
-  }
-
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus {
-      color: #FF6F00;
-      background-color: transparent;
-  }
-
-  .navbar-default .navbar-nav > .open > a,
-  .navbar-default .navbar-nav > .open > a:focus,
-  .navbar-default .navbar-nav > .open > a:hover {
-      background-color: transparent;
-      color: #FFEA00;
-  }
-
-//---------Footer---------
-
- .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 100px;
-  background-color: #212121;
-
-  p {
-   color: white;
-   margin-top: 30px;
-  }
+ .p {font-size: 16px;}
+ .bg-1 {
+     background-color: #1abc9c; /* Green */
+     color: #ffffff;
+ }
+ .bg-2 {
+     background-color: #474e5d; /* Dark Blue */
+     color: #ffffff;
+ }
+ .bg-3 {
+     background-color: #ffffff; /* White */
+     color: #555555;
+ }
+ .bg-4 {
+     background-color: #cecece; /* Black Gray */
+     color: #040201;
+ }
+ .container-fluid01 {
+     padding-top: 70px;
+     padding-bottom: 70px;
  }
 
 
+ //————
 
-  //---------Box---------
+ @import url("http://fonts.googleapis.com/css?family=Roboto");
 
-.box {
-   background-image: url(https://ww3.sinaimg.cn/large/006tNc79gy1fexltjr4mbj314v0pj11x.jpg);//加载背景图
-   background-position: center center;//背景图垂直、水平均居中
-   background-repeat: no-repeat;//背景图不平铺
-   background-size: cover;//让背景图基于容器大小伸缩
-   background-attachment: fixed;//当内容高度大于图片高度时，背景图像的位置相对于viewport固定
-   background-color: #464646;//设置背景颜色，背景图加载过程中会显示背景色
-   padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
-   margin: 0 -30px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负30，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
-   border-radius: 0;//圆角为0
+/****** LOGIN MODAL 登录弹窗 ******/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
 }
 
-.box-inner {
-   background-color: transparent;
-   padding-bottom: 5px;
-   margin: 120px 30% 30px 30%;
-}
-
-.title {
-   text-align: center;
-   margin-bottom: 30px;
-   color: #FFEA00;
-}
-
-.slogan {
-   color: #222;
-   margin-top: 10px;
-   margin-bottom: 50px;
-   text-align: center;
-   font-size: 25px;
-   top: 12px;
-   color: #FFEA00;
-}
-
- .lead1 {
-     margin-bottom: 60px;
-     text-align: center;
-     color: white;
-}
-
-//---------Content---------
-
-.content-section-a {
-   padding: 50px 0;
-   background-color: transparent;
-   margin-top: 80px;
-   margin-bottom: 80px;
-   color: #212121;
-}
-
-.content-section-b {
-   padding: 50px 0;
-   background-color: #EEEEEE;
-   margin: 0 0px 0px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负30，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
-   border-radius: 0;//圆角为0
-   color: #212121;
-}
-
-.section-heading-spacer {
-   float: left;
-   width: 200px;
-   border-top: 3px solid #e7e7e7;
-}
-
-.section-heading {
-   margin-bottom: 30px;
-}
-
-.lead {
-   font-size: 18px;
-   font-weight: 400;
-   color: #212121;
-   text-align: left;//文字左对齐
-   text-indent:25px
-}
-
-//————
-
-.lead2 {
-   font-size: 18px;
-   font-weight: 400;
-   color: #212121;
-   text-align: left;//文字左对齐
-}
-
-//————管理员后台美化
-
-.custab{
-  border: 1px solid #ccc;
-
-  padding: 5px;
-  margin: 5% 0;
-  box-shadow: 3px 3px 2px #ccc;
-
-  transition: 0.5s;
-}
-
-.custab:hover{
-  box-shadow: 3px 3px 0px transparent;
-  transition: 0.5s;
-}
-
-.active{
+.loginmodal-container h1 {
   text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
 }
 
-//————about页面
-.content-section-c{
-   padding: 50px 0;
-   margin: 0 -15px 0px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负30，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
-   border-radius: 0;//圆角为0
-   color: #212121;
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-//————背景图片
-
-.box01 {
-   background-image: url(https://ww4.sinaimg.cn/large/006tNc79ly1ff042taaz3j31kw12z7wh.jpg);//加载背景图
-   background-position: center center;//背景图垂直、水平均居中
-   background-repeat: no-repeat;//背景图不平铺
-   background-size: cover;//让背景图基于容器大小伸缩
-   background-attachment: fixed;//当内容高度大于图片高度时，背景图像的位置相对于viewport固定
-   background-color: #464646;//设置背景颜色，背景图加载过程中会显示背景色
-   padding-bottom: 0px;//内部的底部边距，这样按钮不会很靠近底部了
-   margin: 0 -15px 0px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负30，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
-   border-radius: 0;//圆角为0
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
-.parent {
-  overflow: hidden
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+}
+
+.login-help{
+  font-size: 12px;
 }
