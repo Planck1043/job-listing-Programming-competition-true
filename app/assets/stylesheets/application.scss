@@ -101,7 +101,7 @@
 
 //---------Footer---------
  .bg-5 {
-   padding: 20px;
+   padding: 20px 15px;
    bottom: 0;
    width: 100%;
    /* Set the fixed height of the footer here */
@@ -112,17 +112,11 @@
 
  .footer {
    position: absolute;
-   bottom: 0;
    width: 100%;
    /* Set the fixed height of the footer here */
    height: 100px;
    background-color: #233140;
-
-   .p {
-      color: white;
-     margin-top: 30px;
-   }
-  }
+ }
  //————首页 css————
 
  .body {
@@ -154,6 +148,7 @@
      color: #555555;
  }
  .bg-4 {
+     padding-bottom: 500px;
      background-color: #cecece;
      color: #040201;
  }
