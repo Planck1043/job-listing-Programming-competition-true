@@ -17,42 +17,46 @@
 
         </li>
         <li>
-          <%= link_to("悬赏发表时间排序", jobs_path ) %>
-
+          <%= link_to("发表时间排序", jobs_path ) %>
         </li>
     </ul>
 </div>
 
-<table class="table table-boldered table-striped custab" >
-    <thead>
-        <tr>
-            <td>知识悬赏标题</td>
-            <td>赏金下限</td>
-            <td>赏金上限</td>
-            <td>发布时间</td>
-        </tr>
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <table class="table" >
+          <thead>
+              <tr>
+                  <td>知识悬赏标题</td>
+                  <td>赏金下限</td>
+                  <td>赏金上限</td>
+                  <td>发布时间</td>
+              </tr>
+          </thead>
+          <tbody>
+              <% @jobs.each do |job| %>
+              <tr>
+                  <td>
+                      <%= link_to(job.title, job_path(job)) %>
+                  </td>
+                  <td>
+                      <%= job.wage_lower_bound %>
+                  </td>
+                  <td>
+                      <%= job.wage_upper_bound %>
+                  </td>
+                  <td>
+                      <%= job.created_at %>
+                  </td>
+              </tr>
+              <% end %>
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
-    </thead>
-    <tbody>
-        <% @jobs.each do |job| %>
-        <tr>
-            <td>
-                <%= link_to(job.title, job_path(job)) %>
-            </td>
-            <td>
-                <%= job.wage_lower_bound %>
-            </td>
-            <td>
-                <%= job.wage_upper_bound %>
-            </td>
-            <td>
-                <%= job.created_at %>
-            </td>
-        </tr>
-        <% end %>
-    </tbody>
-
-</table>
 </body>
 </head>
 </html>
