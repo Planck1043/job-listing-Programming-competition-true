@@ -36,7 +36,7 @@
 
 .alert {
   border-radius: 0; //圆角为0
-  margin: 0 -15px 0px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  margin: 0 0px 0px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
 
 }
 
@@ -151,10 +151,14 @@
    font-size: 24px;
  }
  .bg-1 {
-     background-color: #1abc9c; /* Green */
+     background-color: #45ADA8; /* Green */
      color: #ffffff;
  }
  .bg-2 {
+   background-image: url("https://ww4.sinaimg.cn/large/006tNc79gy1ff4tu6q8q8j30zk0qogqs.jpg");
+   background-position: center center;
+   background-attachment: fixed;
+   background-size: cover;
      background-color: #474e5d;
      color: #ffffff;
  }
@@ -170,6 +174,11 @@
  .container-fluid01 {
      padding-top: 40px;
      padding-bottom: 40px;
+     margin: 0 -15px;
+ }
+ .container-fluid02 {
+     padding-top: 140px;
+     padding-bottom: 140px;
      margin: 0 -15px;
  }
 
