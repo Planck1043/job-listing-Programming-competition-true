@@ -172,11 +172,6 @@
      padding-bottom: 40px;
      margin: 0 -15px;
  }
- .container-fluid02 {
-     padding-top: 40px;
-     padding-bottom: 40px;
-     margin: 0 -15px;
- }
 
  .jumbotron {
    margin: 0;//上下左右margin为0
@@ -192,8 +187,15 @@
  }
 
 
- //————知识悬赏任务页面——————
+ //————各个页面的公共背景—————
 
+ body {
+     background: url("https://ww1.sinaimg.cn/large/006tNc79gy1ff38792d56j31kw1kw7cb.jpg");
+     background-size: 100% 100%;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     font-family: 'Open Sans', sans-serif;
+ }
 
 
 
