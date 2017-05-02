@@ -1,12 +1,12 @@
 <br/>
-
     <ul class="nav nav-pills nav-stacked pull-right bg-7" style="max-width: 180px; padding-top:10px;">
       <li class="active"><%= link_to("发布知识悬赏", new_admin_job_path  ) %></li>
     </ul>
-
-
-<table class="table " >
-    <thead>
+<br/>
+<br/>
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
         <tr>
             <td>
                 知识悬赏任务
@@ -27,7 +27,12 @@
                 发布时间
             </td>
         </tr>
-    </thead>
+      </thead>
+  </table>
+</div>
+<div class="tbl-content">
+    <table class="table table-hover" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
 
     <% @jobs.each do |job| %>
     <tr>
@@ -58,4 +63,6 @@
         </td>
     </tr>
     <% end %>
+  </tbody>
 </table>
+</div>
