@@ -93,9 +93,13 @@
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
-  background-color: #FFE0B2;
-  color: #212121;
+  background-color: transparent;
+  color: #FFF176;
 
+}
+
+.dropdown {
+  background-color: #133439;
 }
 
 //——————————搜索框——————————
