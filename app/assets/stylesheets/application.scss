@@ -24,12 +24,6 @@
     min-height: 100%;
   }
 
-.body {
-  background-image:url("https://ww1.sinaimg.cn/large/006tNc79gy1ff38792d56j31kw1kw7cb.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  font-family: 'Open Sans', sans-serif;
-}
 
 //————提醒信息————
 
@@ -198,12 +192,13 @@
  //————各个页面的公共背景—————
 
  body {
-     background: url("https://ww3.sinaimg.cn/large/006tNc79gy1ff6zr9y4yoj31kw11v4bv.jpg");
+     background: url("https://ww4.sinaimg.cn/large/006tNc79ly1ff8k1n39p9j31kw11xkjl.jpg");
      background-size: cover;
      background-attachment: fixed;
      background-repeat: no-repeat;
      font-family: 'Open Sans', sans-serif;
  }
+
 
  //——————各个页面的透明表格——————
  table{
@@ -224,7 +219,7 @@ th{
   text-align: left;
   font-weight: 500;
   font-size: 20px;
-  color: black;
+  color: #212121;
   text-transform: uppercase;
 }
 td{
@@ -233,7 +228,7 @@ td{
   vertical-align:middle;
   font-weight: 300;
   font-size: 20px;
-  color: black;
+  color: #212121;
   border-bottom: solid 1px rgba(255,255,255,0.1);
 }
 

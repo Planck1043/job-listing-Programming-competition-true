@@ -7,6 +7,7 @@ class Job < ApplicationRecord
   scope :published, -> { where(is_hidden: false) }
   scope :recent, -> { order("created_at DESC") }
   has_many :resumes
+  belongs_to :user
 
   def publish!
     self.is_hidden = false
