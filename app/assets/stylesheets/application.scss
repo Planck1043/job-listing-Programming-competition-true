@@ -157,12 +157,15 @@
      color: #ffffff;
  }
  .bg-3 {
-     background-color: #FAFAFA; /* White */
-     color: #555555;
+     background-color: #FFC44B; /* White */
+     color: black;
  }
  .bg-4 {
-     background-color: #cecece;
+     background-color: transparent;
      color: #040201;
+ }
+ .pg{
+     color: #ffffff;
  }
  .container-fluid01 {
      padding-top: 40px;
@@ -170,8 +173,8 @@
      margin: 0 -15px;
  }
  .container-fluid02 {
-     padding-top: 140px;
-     padding-bottom: 140px;
+     padding-top: 240px;
+     padding-bottom: 240px;
      margin: 0 -15px;
  }
 
@@ -182,7 +185,7 @@
    background-color: transparent;
    padding: 10px;//上下左右padding为20px
    text-align:left;//文字左对齐
-   color: #222;//字体颜色
+   color: #ffffff;//字体颜色
 
    border-bottom-right-radius: 3px;//右下角圆边
    border-bottom-left-radius: 3px;//左下角圆边
