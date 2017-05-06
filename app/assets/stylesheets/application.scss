@@ -110,20 +110,21 @@
 
 //---------Footer---------
  .bg-5 {
-   padding: 20px 30px;
+   margin: 0 0;
    bottom: 0;
-   width: 100%;
    /* Set the fixed height of the footer here */
-   height: 100px;
    background-color: #212121;
    color: #FAFAFA;
  }
 
- .footer {
+ footer {
+   padding: 20px 30px;
    position: absolute;
    width: 100%;
    /* Set the fixed height of the footer here */
    height: 100px;
+   letter-spacing: 2px;
+   font: 15px;
    background-color: #233140;
  }
  //————首页 css————
@@ -151,6 +152,7 @@
  .bg-1 {
      background-color: #45ADA8; /* Green */
      color: #ffffff;
+     letter-spacing: 2px;
  }
  .bg-2 {
    background-image: url("https://ww4.sinaimg.cn/large/006tNc79gy1ff4tu6q8q8j30zk0qogqs.jpg");
@@ -159,14 +161,18 @@
    background-size: cover;
      background-color: #474e5d;
      color: #ffffff;
+     letter-spacing: 2px;
  }
  .bg-3 {
      background-color: #FFC44B; /* White */
      color: black;
+     letter-spacing: 2px;
  }
  .bg-4 {
      background-color: transparent;
+     font-family: letter-spacing;
      color: #040201;
+     letter-spacing: 2px;
  }
  .pg{
      color: #ffffff;
